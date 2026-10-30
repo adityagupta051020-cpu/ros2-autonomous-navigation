@@ -1,0 +1,7 @@
+planner_node:
+  ros__parameters:
+    goal_tolerance: 0.5      # metres from goal that counts as arrived
+    obstacle_threshold: 50   # map cells with cost above this are walls
+    cost_weight: 2.0         # how strongly paths avoid high-cost cells (0 = shortest path)
+    timer_period_ms: 500     # how often to check for goal reached / timeout
+    goal_timeout_s: 120.0    # give up on a goal after this long

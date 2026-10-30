@@ -1,0 +1,10 @@
+map_memory_node:
+  ros__parameters:
+    resolution: 0.1            # metres per cell, keep >= costmap resolution
+    width: 300                 # cells (30 m)
+    height: 300                # cells (30 m)
+    origin_x: -15.0            # metres, world position of cell (0, 0)
+    origin_y: -15.0
+    frame_id: "sim_world"      # frame of /odom/filtered's pose
+    distance_threshold: 1.5    # metres moved before fusing a new costmap
+    update_period_ms: 1000     # how often to check whether to fuse

@@ -1,0 +1,8 @@
+control_node:
+  ros__parameters:
+    lookahead_distance: 1.5     # metres ahead on the path to steer toward
+    linear_speed: 0.8           # m/s while following the path (Teleop uses 1.0)
+    max_angular_speed: 1.0      # rad/s cap on turning (Teleop uses 1.0)
+    rotate_in_place_angle: 1.0  # rad; if the target is further off-heading than this, turn on the spot first
+    goal_tolerance: 0.3         # metres from the last waypoint that counts as arrived
+    control_period_ms: 100      # 10 Hz control loop
